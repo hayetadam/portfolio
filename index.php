@@ -94,35 +94,6 @@ ul.css3rotate li a:hover img {
     -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
-/*#projets{
-display: flex;
-    padding: 5%;
-    flex-direction: column;
-    text-align: center;
-
-}
-#projets img{
-    width:300px;
-    height:300px; 
-}
-#projets h2{
-    font-family: 'koverwatch';
-    font-size: 32px;
-}
-#projets a{
-    text-decoration: none;
-}
-#projets li {
-    list-style: none;
-    font-family: 'koverwatch';
-    font-size: 22px;
-    margin-bottom: 5px
-}
-#projets ul {
-    padding: 0;
-}
-*/
-
 /*rotation nom*/
 #logo{
     width: 200px;
@@ -153,11 +124,16 @@ display: flex;
 
 footer{
    background-color:black; 
-   height:150px;
+   height:100px;
    margin-top: 40px;
 }
 footer p{
-    font-size:20px;
+    font-size:17px;
+}
+footer i{
+    width:50px;
+    height:50px;
+    
 }
 
 .php{
@@ -213,8 +189,6 @@ foreach($files as $dossier) {
 <!-- code html pour la rotation des photos -->
 
 <h1 class="text-center" >Mes compétences</h1>
-
-
 <ul class="css3rotate"> 
     <li><a href="#"><img src="image/html.png" /></a></li>
     <li><a href="#"><img src="image/html5-css3.jpg"/></a></li>
