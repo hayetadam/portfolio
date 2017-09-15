@@ -169,11 +169,11 @@ footer i{
 <h1 id="title"class="text-center" >Mes Projets</h1>
 <div class ="php">
 <?php
-$portfolio = "./";
+$portfolio = "./projet";
 $files = scandir($portfolio);
 
 foreach($files as $dossier) {
-    if($dossier!="." && $dossier!=".." && $dossier!='image') {
+    if($dossier[0] !== ".") {
         if (is_dir($dossier)) { 
             echo '<ul id ="listeprojets" class="col-sm-3 col-sm-offset-2"> ';
             echo '<li><a href="'.$dossier.'">'.$dossier. '</a></li>';
