@@ -174,10 +174,11 @@ $files = scandir($portfolio);
 
 foreach($files as $dossier) {
     if($dossier[0] !== ".") {
-        if (is_dir($portfolio.'/'.$dossier)) { 
+        $path = $portfolio.'/'.$dossier;
+        if (is_dir($path)) { 
             echo '<ul id ="listeprojets" class="col-sm-3 col-sm-offset-2"> ';
-            echo '<li><a href="'.$dossier.'">'.$dossier. '</a></li>';
-            echo '<img src="'.$dossier.'/screenshot.png" alt="screen" class="img-responsive" >' ;
+            echo '<li><a href="'.$path.'">'.$dossier. '</a></li>';
+            echo '<img src="'.$path.'/screenshot.png" alt="screen" class="img-responsive" >' ;
             echo '</ul>';
            
         }
